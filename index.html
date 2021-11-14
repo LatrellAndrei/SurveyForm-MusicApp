@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+      <link rel="stylesheet" type="text/css" href="survey.css" />
+
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Music App Survey</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve the platform
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age(Optional)<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is your Music Genre?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Favorite Genre</option>
+        <option value="Popular Music">Pop</option>
+        <option value="Korean Pop">Kpop</option>
+        <option value="Rock">Rock</option>
+        <option value="Hiphop/Rap">HipHop</option>
+        <option value="Rhythm">R&B</option>
+        <option value="Others">Other Genre</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>What Music App Do you use</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Spotify"
+          type="radio"
+          class="input-radio"
+          checked
+        />Spotify</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Youtube Music"
+          type="radio"
+          class="input-radio"
+        />Youtube Music</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="Apple Music"
+          type="radio"
+          class="input-radio"
+        />Apple Music</label
+      >
+
+
+      <label
+        ><input
+          name="user-recommend"
+          value="Deezer"
+          type="radio"
+          class="input-radio"
+        />Deezer</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What SmartPhone Do you use?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Android Phones">Android Phones</option>
+        <option value="Iphone/Ipad">Iphone/Ipad</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="More Songs"
+          type="checkbox"
+          class="input-checkbox"
+        />More Songs</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="User Interface"
+          type="checkbox"
+          class="input-checkbox"
+        />User Interface</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="With Music Video"
+          type="checkbox"
+          class="input-checkbox"
+        />With Music Video</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Playlist Mix"
+          type="checkbox"
+          class="input-checkbox"
+        />Playlist Mix</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Audio Quality"
+          type="checkbox"
+          class="input-checkbox"
+        />Audio Quality</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Bugs/Glitches"
+          type="checkbox"
+          class="input-checkbox"
+        />Bugs/Glitches</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Discovering Music"
+          type="checkbox"
+          class="input-checkbox"
+        />Discovering Music</label
+      >
+      
+      <label
+        ><input
+          name="prefer"
+          value="Lyrics"
+          type="checkbox"
+          class="input-checkbox"
+        />Lyrics</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
